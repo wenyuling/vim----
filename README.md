@@ -3,13 +3,13 @@ vim有三种模式：normal模式、insert模式、命令模式
 
 历史命令
 以：和/开头的命令都有历史记录 可以通过上下箭头选择历史命令
-i  -->insert插入模式 按esc回到normal模式
-x -->删除光标所在的一个字符
-:wq -->存盘+退出(:w后面可以跟文件名)
-:q -->不保存退出
-dd 删除当前行并剪切复制，相当于mac下command+x
+- i  -->insert插入模式 按esc回到normal模式
+- x -->删除光标所在的一个字符
+- :wq -->存盘+退出(:w后面可以跟文件名)
+- :q -->不保存退出
+- dd 删除当前行并剪切复制，相当于mac下command+x
 
-p 粘贴 相当于Mac下command+v
+- p 粘贴 相当于Mac下command+v
 
 
 
