@@ -1,9 +1,92 @@
-<mxfile host="app.diagrams.net" modified="2024-03-05T07:06:58.071Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" version="24.0.1" etag="KpZcCSMFVjmKIx32O_v8" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-05T07:18:33.899Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="KZtIY4hVl1u8XM2f0d8h" version="24.0.1" type="github">
   <diagram name="第 1 页" id="f3Fr8dT-iEb8A-EBcwqp">
-    <mxGraphModel>
+    <mxGraphModel dx="1026" dy="651" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="6at40YZfcNegoBJyiN95-1" value="es客户端" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-3" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="160" width="240" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-4" value="第1台机器" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="160" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-5" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="200" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-6" value="es进程" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="120" y="200" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-8" value="share 01&lt;div&gt;primary&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="250" width="80" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6at40YZfcNegoBJyiN95-1" target="6at40YZfcNegoBJyiN95-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-11" value="将数据写入到primary share o1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="30" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-12" value="share 03&lt;div&gt;replica&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="250" width="80" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-13" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="160" width="240" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-14" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="200" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-15" value="share 02&lt;div&gt;primary&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="250" width="80" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-16" value="share 01&lt;div&gt;replica&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="250" width="80" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="6at40YZfcNegoBJyiN95-8" target="6at40YZfcNegoBJyiN95-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="100" y="360" />
+              <mxPoint x="580" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-19" value="primary share o1将数据同步到share 01 replica上去" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="290" y="310" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-20" value="第2台机器" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="160" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-21" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="770" y="160" width="240" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-22" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="200" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-23" value="share 03&lt;div&gt;primary&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="250" width="80" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-24" value="share 02&lt;div&gt;replica&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="250" width="80" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-25" value="第3台机器" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="860" y="160" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="6at40YZfcNegoBJyiN95-26" target="6at40YZfcNegoBJyiN95-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="6at40YZfcNegoBJyiN95-26" target="6at40YZfcNegoBJyiN95-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-26" value="es客户端" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-27" value="假设去读取share 03数据" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="550" y="440" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-30" value="可以从share 03 replica/share 03 primary上读取" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="330" y="440" width="90" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
