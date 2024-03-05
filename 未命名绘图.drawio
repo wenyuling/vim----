@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-03-05T07:18:33.899Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="KZtIY4hVl1u8XM2f0d8h" version="24.0.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-05T07:37:24.300Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="JHnJ5I83qawwESUClqx0" version="24.0.1" type="github">
   <diagram name="第 1 页" id="f3Fr8dT-iEb8A-EBcwqp">
-    <mxGraphModel dx="1026" dy="651" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1853" dy="651" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,16 +8,27 @@
           <mxGeometry x="470" y="30" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="6at40YZfcNegoBJyiN95-3" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="30" y="160" width="240" height="210" as="geometry" />
+          <mxGeometry x="30" y="160" width="240" height="390" as="geometry" />
         </mxCell>
         <mxCell id="6at40YZfcNegoBJyiN95-4" value="第1台机器" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="110" y="160" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="6at40YZfcNegoBJyiN95-5" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="50" y="200" width="200" height="140" as="geometry" />
+          <mxGeometry x="40" y="210" width="200" height="220" as="geometry" />
         </mxCell>
         <mxCell id="6at40YZfcNegoBJyiN95-6" value="es进程" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="120" y="200" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6at40YZfcNegoBJyiN95-8" target="6at40YZfcNegoBJyiN95-35">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="285" />
+              <mxPoint x="150" y="383" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6at40YZfcNegoBJyiN95-8" target="6at40YZfcNegoBJyiN95-34">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="6at40YZfcNegoBJyiN95-8" value="share 01&lt;div&gt;primary&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="60" y="250" width="80" height="70" as="geometry" />
@@ -43,16 +54,18 @@
         <mxCell id="6at40YZfcNegoBJyiN95-16" value="share 01&lt;div&gt;replica&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="540" y="250" width="80" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="6at40YZfcNegoBJyiN95-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="6at40YZfcNegoBJyiN95-8" target="6at40YZfcNegoBJyiN95-16">
+        <mxCell id="6at40YZfcNegoBJyiN95-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
+            <mxPoint x="105" y="320" as="sourcePoint" />
+            <mxPoint x="585" y="320" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="100" y="360" />
-              <mxPoint x="580" y="360" />
+              <mxPoint x="105" y="350" />
+              <mxPoint x="585" y="350" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="6at40YZfcNegoBJyiN95-19" value="primary share o1将数据同步到share 01 replica上去" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="290" y="310" width="110" height="30" as="geometry" />
+          <mxGeometry x="290" y="270" width="110" height="30" as="geometry" />
         </mxCell>
         <mxCell id="6at40YZfcNegoBJyiN95-20" value="第2台机器" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="500" y="160" width="60" height="30" as="geometry" />
@@ -79,13 +92,74 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="6at40YZfcNegoBJyiN95-26" value="es客户端" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="470" y="490" width="120" height="60" as="geometry" />
+          <mxGeometry x="460" y="570" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="6at40YZfcNegoBJyiN95-27" value="假设去读取share 03数据" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="550" y="440" width="90" height="30" as="geometry" />
+          <mxGeometry x="660" y="630" width="90" height="30" as="geometry" />
         </mxCell>
         <mxCell id="6at40YZfcNegoBJyiN95-30" value="可以从share 03 replica/share 03 primary上读取" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="330" y="440" width="90" height="30" as="geometry" />
+          <mxGeometry x="300" y="620" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-31" value="如果哪一条机器宕机了，也可以从其他副本上获得数据。" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="720" y="10" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-32" value="es有协调节点：客户端写入一条数据，如果primary和replica都写完了，协调节点会返回成功的响应给客户端" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="731" y="70" width="199" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="90" y="418" as="sourcePoint" />
+            <mxPoint x="110" y="454.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="90" y="400" />
+              <mxPoint x="90" y="455" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-34" value="内存buffer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="358" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6at40YZfcNegoBJyiN95-35" target="6at40YZfcNegoBJyiN95-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-35" value="translog&lt;div&gt;日志文件&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="358" width="70" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-40" value="客户端写入的数据假设写入到share 01 primary，除了同步到primary上，还会同步到内存buffer和translog日志文件上。" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-160" y="315" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-43" value="os cache" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="440" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-44" value="segment file（磁盘）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="492" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-49" value="内存buffer会把数据同步到 os cache内存中" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-140" y="430" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-50" value="translog日志文件会不断增大，大到一定阈值，会触发commit操作。也会删掉操作，重新创建新的文件夹。" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="390" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-52" value="&amp;nbsp;commit point（磁盘）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="492" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.863;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="6at40YZfcNegoBJyiN95-43" target="6at40YZfcNegoBJyiN95-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-56" value="每隔一&lt;span style=&quot;background-color: initial;&quot;&gt;秒refresh&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="430" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-58" value="每隔30秒flush" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="230" y="450" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-59" value="缓存预热" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-130" y="710" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-60" value="数据预热" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-130" y="788" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6at40YZfcNegoBJyiN95-61" value="冷热分离" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-130" y="860" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
